@@ -3,10 +3,12 @@ services:
     name: gruha-alankara-api
     runtime: python
     rootDir: backend
-    pythonVersion: "3.11"
+    pythonVersion: "3.11.0"
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.0"
       - key: SECRET_KEY
         generateValue: true
       - key: ALGORITHM
