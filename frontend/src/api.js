@@ -2,7 +2,9 @@ import axios from 'axios';
 
 const resolvedBaseUrl =
   import.meta.env.VITE_API_BASE_URL ||
-  (window.location.hostname === 'localhost' ? 'http://127.0.0.1:8000' : 'http://localhost:8000');
+  (window.location.hostname === 'localhost'
+    ? 'http://127.0.0.1:8000'
+    : '');  // Will be set via VITE_API_BASE_URL env var on Vercel
 
 const api = axios.create({ baseURL: resolvedBaseUrl });
 
