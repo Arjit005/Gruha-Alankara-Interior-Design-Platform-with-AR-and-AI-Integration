@@ -15,4 +15,4 @@ services:
       - key: DATABASE_URL
         value: sqlite:///./gruha.db
       - key: ALLOWED_ORIGINS
-        value: https://gruha-alankara-interior-design-plat.vercel.app
+        value: https://gruha-alankara-interior-design-plat.vercel.app,https://gruha-alankara-interior-design-platform.onrender.com
