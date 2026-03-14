@@ -4,7 +4,8 @@ import uuid
 from datetime import datetime
 from typing import Any, List, Optional
 
-from jose import JWTError, jwt
+import jwt
+from jwt import InvalidTokenError as JWTError
 
 from fastapi import BackgroundTasks, Depends, FastAPI, File, Form, HTTPException, UploadFile, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -45,7 +46,14 @@ app = FastAPI(title="Gruha Alankara API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://gruha-alankara-interior-design-plat.vercel.app",
+        "https://gruha-alankara-interior-design-platform-with-ar-and-ai-integration.vercel.app",
+        # Allow all Vercel preview deployments
+        "https://*.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
