@@ -12,4 +12,3 @@ gtts
 langchain-core
 groq
 httpx
-numpy
