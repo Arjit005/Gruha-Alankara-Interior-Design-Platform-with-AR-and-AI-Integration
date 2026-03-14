@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Gruha Alankara - Final Submission
 
 Gruha Alankara is an AI + AR interior design platform that enables users to capture or upload room images, receive personalized furniture recommendations, preview placements in live AR, and auto-book suggested items using Buddy AI.
@@ -82,7 +82,6 @@ Gruha Alankara is an AI + AR interior design platform that enables users to capt
 
 1. Add premium `.glb` assets in `frontend\public\models` for photoreal previews.
 2. Capture a final demo evidence pack (screenshots + short walkthrough video).
-=======
 # Gruha-Alankara-Interior-Design-Platform-with-AR-and-AI-Integration
+
 Gruha Alankara is an AI-powered interior design platform built with React and FastAPI. It analyzes room images, recommends design styles, and visualizes furniture placement using AR and 3D technologies. The system includes an AI assistant with multilingual voice support for smart interior design guidance.
->>>>>>> e667a5aacf907da9ebfde50756cf7a8050c11fa3
